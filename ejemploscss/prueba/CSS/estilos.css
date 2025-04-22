@@ -1,0 +1,93 @@
+/* styles.css – Solo para escritorio, sin ajustes móviles */
+
+/* — Reset básico — */
+* {
+    margin: 0;              /* Quita margen por defecto */
+    padding: 0;             /* Quita relleno por defecto */
+    box-sizing: border-box; /* Hace que ancho/alto incluyan borde y padding */
+  }
+  
+  /* — Estilos globales para todo el body — */
+  body {
+    font-family: Arial, sans-serif; /* Fuente sencilla y legible */
+    color: #333;                    /* Color de texto oscuro */
+    background: #f5f5f5;            /* Fondo claro uniforme */
+  }
+  
+  /* — Header: la barra superior fija — */
+  .header {
+    display: flex;                  /* Logo y menú en línea */
+    justify-content: space-between; /* Espacio entre logo y enlaces */
+    align-items: center;            /* Centra verticalmente */
+    padding: 1rem 2rem;             /* Espacio interior amplio */
+    background: #222;               /* Fondo oscuro */
+  }
+  
+  /* — Logo dentro del header — */
+  .header .logo {
+    width: 120px; /* Ancho fijo para que no cambie */
+  }
+  
+  /* — Enlaces de navegación — */
+  .header nav a {
+    color: #fff;          /* Texto blanco */
+    text-decoration: none;/* Sin subrayado */
+    margin-left: 1.5rem;  /* Separación entre enlaces */
+    font-weight: bold;    /* Texto en negrita */
+  }
+  .header nav a:hover {
+    opacity: 0.7; /* Transparencia al pasar el ratón */
+  }
+  
+  /* — Hero: sección principal ocupando toda la pantalla — */
+  .hero {
+    display: flex;               
+    flex-direction: column;      /* Elementos en columna */
+    justify-content: center;     /* Centrar verticalmente */
+    align-items: center;         /* Centrar horizontalmente */
+    text-align: center;          /* Texto centrado */
+    height: calc(100vh - 72px);  /* Alto total menos el header */
+    background: url('../IMAGENES/tenis-de-mesa.jpg') no-repeat center/cover;
+    /* Imagen de fondo centrada y cubre todo */
+    padding: 0 2rem;             /* Espacio lateral para dar margen */
+  }
+  
+  /* — Título grande del hero — */
+  .hero h1 {
+    font-size: 2.5rem;       /* Muy grande para destacar */
+    color: #fff;             /* Blanco sobre fondo oscuro */
+    margin-bottom: 0.5rem;   /* Separación debajo */
+  }
+  
+  /* — Texto explicativo del hero — */
+  .hero p {
+    font-size: 1.1rem;       /* Tamaño medio legible */
+    color: #eee;             /* Blanco claro */
+    margin-bottom: 1.5rem;   /* Espacio antes del botón */
+    max-width: 500px;        /* Líneas que no sean muy anchas */
+  }
+  
+  /* — Botón de llamada a la acción — */
+  .btn {
+    display: inline-block;       /* Para poder poner padding */
+    background: #ff6600;         /* Color destacado */
+    color: #fff;                 /* Texto blanco */
+    padding: 0.75rem 1.5rem;     /* Espacio interior */
+    border-radius: 5px;          /* Bordes redondeados */
+    text-decoration: none;       /* Sin subrayado */
+    font-size: 1rem;             /* Tamaño normal */
+    transition: background 0.3s; /* Transición suave */
+  }
+  .btn:hover {
+    background: #e05500; /* Color más oscuro al pasar el ratón */
+  }
+  
+  /* — Footer: pie de página muy sencillo — */
+  .footer {
+    text-align: center;  /* Centra el texto */
+    padding: 1rem 2rem;  /* Espacio interior */
+    background: #222;    /* Fondo oscuro */
+    color: #ccc;         /* Texto gris claro */
+    font-size: 0.9rem;   /* Tamaño un poco más pequeño */
+  }
+  

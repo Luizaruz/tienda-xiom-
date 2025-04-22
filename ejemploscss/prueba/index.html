@@ -1,0 +1,73 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<!-- Indica que este documento es HTML5 -->
+
+<html lang="es">
+<!-- El elemento raíz, con el idioma del contenido -->
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Define la codificación de caracteres (acentos, ñ, etc.) -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Hace que la página se vea bien en móviles -->
+
+  <title>Tienda Xiom — Landing</title>
+  <!-- Texto que sale en la pestaña del navegador -->
+
+  <link rel="stylesheet" href="../prueba/CSS/estilos.css" />
+  <!-- Conecta este HTML con el archivo de estilos CSS -->
+</head>
+
+<body>
+  <!-- Aquí va todo lo que se ve en la página -->
+
+  <header class="header">
+    <!-- Cabecera con logo y menú -->
+    <img src="../prueba/IMAGENES/ph01.gif" alt="Logo Tienda Xiom" class="logo">
+    <!-- Imagen del logo; “alt” es el texto si no carga la imagen -->
+
+    <nav>
+      <!-- Navegación principal -->
+      <a href="#shop">Tienda</a>
+      <!-- Enlace que baja hasta la sección “shop” -->
+
+      <a href="#contact">Contacto</a>
+      <!-- Enlace que baja hasta la sección “contact” -->
+    </nav>
+  </header>
+
+  <section class="hero">
+    <!-- Sección principal (hero) con mensaje y botón -->
+    <h1>Descubre Tienda Xiom</h1>
+    <!-- Título grande que capta la atención -->
+
+    <p>La mejor selección de equipamiento para tenis de mesa.</p>
+    <!-- Subtítulo con más información -->
+
+    <a href="#shop" class="btn">Ir a la tienda</a>
+    <!-- Botón de llamada a la acción -->
+    <form action="#" class="subscribe-form">
+        <h2>Ingresa tu correo electrónico</h2>
+        <label for="email">Correo electrónico:</label><br>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="ejemplo@correo.com"
+          required
+        ><br>
+        <button type="submit">Enviar</button>
+      </form>
+  </section>
+
+  <footer class="footer">
+    <!-- Pie de página simple -->
+    <p>&copy; 2025 Tienda Xiom</p>
+    <!-- Texto de derechos de autor -->
+  </footer>
+
+</body>
+</html>
+
+
